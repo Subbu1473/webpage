@@ -1,0 +1,603 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  height: 200vh;
+  width: 100%;
+  background: linear-gradient(to bottom,lightseagreen 20%,lightgrey 90%);
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align:left;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 15px;
+}
+
+.navbar .logo a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar .links {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+}
+
+.navbar .links a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 0;
+  transition: 0.2s ease;
+}
+
+.navbar .links a:hover {
+  color:blue;
+}
+
+.navbar .buttons a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 15px 0;
+  transition: 0.2s ease;
+}
+
+.navbar .buttons a:not(:last-child) {
+  margin-right: 30px;
+}
+.navbar .buttons .signin {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 0.375rem;
+  text-align: center;
+  transition: 0.2s ease;
+}
+.navbar .buttons .signin:hover {
+  color:blue;
+}
+
+.navbar .buttons .signup {
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  border-radius: 0.375rem;
+  text-align: center;
+  transition: 0.2s ease;
+}
+
+.navbar .buttons .signup:hover {
+  background-color:none ;
+  color:blue;
+}
+
+.img {
+  display: block; 
+  width: 50%; 
+  margin: 0 auto; 
+}
+
+.gif-image {
+  display: block; 
+  width: 100%; 
+  height: auto; 
+  float: right; 
+  margin-left: 20px; 
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 95vh;
+  padding: 0 15px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.hero-section .hero {
+  max-width: 50%;
+  color: #fff;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  color: #c9c7c7;
+}
+
+.hero-section .img img {
+  width: 517px;
+}
+
+.hero-section .buttons {
+  margin-top: 40px;
+}
+
+.hero-section .buttons a {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 0.375rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+  display: inline-block;
+}
+
+.hero-section .buttons a:not(:last-child) {
+  margin-right: 15px;
+}
+
+.buttons .join {
+  background-color: #47b2e4;
+}
+
+.hero-section .buttons .learn {
+  border: 1px solid #fff;
+  border-radius: 0.375rem;
+}
+
+.hero-section .buttons a:hover {
+  background-color: #47b2e4;
+}
+
+
+@media screen and (max-width: 1023px) {
+  .navbar .logo a {
+    font-size: 1.5rem;
+  }
+
+  .links {
+    position: fixed;
+    left: -100%;
+    top: 75px;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50px;
+    background: #175d69;
+    flex-direction: column;
+    transition: 0.3s ease;
+  }
+
+
+  .header .buttons {
+    display: none;
+  }
+
+  .hero-section .hero {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .hero-section img {
+    display: none;
+  }
+}
+/* this is sevices css style*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.box {
+  display: inline-block;
+  width: 400px;
+  padding: 30px;
+  margin: 10px;
+  background-color:white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.box h4 {
+  color: #333;
+  margin-top: 0;
+  font-size: 1.0rem;
+  padding: 15px;
+}
+
+.box p {
+  color: black;
+  margin-bottom: 0;
+  font-size: 1.0rem;
+}
+
+.box:hover{
+  background-color: lightslategrey;
+}
+h1 {
+  font-size: 1.5rem;
+  color:white;
+}
+p{
+  color:whitesmoke;
+  padding:15px;
+  margin:0;
+  font-size:1.0rem;
+}
+
+/*Home style sheet*/
+  /* Reset default margin and padding */
+body, h1, h2, ul, li {
+  margin: 0;
+  padding: 0;
+  padding:5px;
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  width:100%;
+  height:100vh;
+}
+}
+
+header {
+  background-color: lightseagreen;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+header h1 {
+  margin-bottom: 10px;
+  
+
+}
+
+header p {
+  margin-bottom: 20px;
+  
+}
+
+.services {
+  padding: 20px;
+  
+}
+
+.services h2 {
+  margin-bottom: 10px;
+  color: white;
+  
+}
+
+.services ul {
+  list-style-type: none;
+  color:white;
+  
+}
+
+.services li {
+  margin-bottom: 10px;
+  
+
+}
+
+.services a {
+
+  text-decoration: none;
+  color:bisque;
+
+}
+
+.services a:hover {
+  text-decoration: underline;
+}
+/*for contact stylesheet*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color:none;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.container1 {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color:black;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+footer {
+  background-color: none;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.container2 {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+.mail-us {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+}
+
+.mail-btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.mail-btn:hover {
+  background-color: #555;
+}
+p{
+  color:black;
+}
+/*portofolio stylesheet*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+
+header {
+  background-color:none;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.container3 {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color:white;
+}
+
+.project {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color:white 60%;
+  color:white;
+  text-align: center;
+  padding: 5px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+h2:hover{
+  color:black;
+}
+.project:hover{
+  background-color:white;
+}
+/*about page stylesheet*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width:100%;
+  height:200vh;
+}
+
+header {
+  background-color:none;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.container4 {
+  width: 100%;
+  height:100%;
+  max-width:1000px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  color:black;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+footer {
+  background-color:none;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+/*Signin stylesheet*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+
+}
+
+
+.container5 {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form h2 {
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+/*signup style sheet*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+
+.container6 {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form h2 {
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
